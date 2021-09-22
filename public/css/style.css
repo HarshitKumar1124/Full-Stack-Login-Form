@@ -1,0 +1,17 @@
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#Page_container {
+  border: 2px solid red;
+  width: 100%;
+  height: 100vh;
+}
+
+#Page_container #LandingPageUI {
+  border: 2px solid dodgerblue;
+}
+/*# sourceMappingURL=style.css.map */
