@@ -8,10 +8,184 @@
 #Page_container {
   border: 2px solid red;
   width: 100%;
-  height: 100vh;
 }
 
-#Page_container #LandingPageUI {
+#Page_container #LandingUI {
   border: 2px solid dodgerblue;
+  width: 100%;
+  height: 60vh;
+  background: transparent -webkit-gradient(linear, left top, left bottom, from(#184261), to(#029FA4)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, #184261 0%, #029FA4 100%) 0% 0% no-repeat padding-box;
+  color: white;
+}
+
+#Page_container #LandingUI #Navbar {
+  border: 2px solid red;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+#Page_container #LandingUI #Navbar .Heading {
+  border: 2px solid orangered;
+}
+
+#Page_container #LandingUI #Navbar .Heading h3 {
+  border: 2px solid greenyellow;
+  padding: 20px 100px !important;
+}
+
+#Page_container #LandingUI #Navbar .OptionsList ul {
+  list-style-type: none;
+  border: 2px solid magenta;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+#Page_container #LandingUI #Navbar .OptionsList ul li a {
+  display: inline-block;
+  border: 2px solid yellow;
+  padding: 23px 40px !important;
+  margin: 0px 10px !important;
+  font-size: 17.5px;
+  text-decoration: none;
+  color: white;
+}
+
+#Page_container #LandingUI #Title {
+  letter-spacing: 10px;
+  font-size: 30px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+#Page_container #LandingUI #Title h1 {
+  border: 2px solid red;
+}
+
+#Page_container #LandingUI #Title p {
+  border: 2px solid saddlebrown;
+  font-size: 18px;
+  padding-top: 10px !important;
+}
+
+#Page_container #RegistrationForm {
+  border: 2px solid greenyellow;
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#Page_container #RegistrationForm #form {
+  border: 2px solid blue;
+  margin: 50px 0px !important;
+  background: transparent -webkit-gradient(linear, left top, right top, from(#1169a8), to(#029FA4)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(90deg, #1169a8 0%, #029FA4 100%) 0% 0% no-repeat padding-box;
+  color: white;
+}
+
+#Page_container #RegistrationForm #form .logo {
+  border: 2px solid blueviolet;
+  margin-top: 30px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#Page_container #RegistrationForm #form .logo img {
+  width: 40%;
+  height: 40%;
+  margin: 30px 0px !important;
+  mix-blend-mode: multiply;
+  border: 2px solid forestgreen;
+}
+
+#Page_container #RegistrationForm #form .logo h3 {
+  border: 2px solid green;
+  line-height: 40px;
+}
+
+#Page_container #RegistrationForm #form .Inputfield {
+  background-color: #f3ecec;
+  margin-top: 30px !important;
+  height: 500px;
+  border-radius: 15% 0% 0% 15%;
+}
+
+#Page_container #RegistrationForm #form .Inputfield #toggleButton {
+  border: 2px solid orange;
+  height: 60px;
+}
+
+#Page_container #RegistrationForm #form .Inputfield h3 {
+  color: #a19494;
+  font-style: italic;
+  border: 2px solid orangered;
+  text-align: center;
+  padding: 10px 0px !important;
+}
+
+#Page_container #RegistrationForm #form .Inputfield .submitReset {
+  border: 2px solid pink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px !important;
+}
+
+#Page_container #RegistrationForm #form .Inputfield .submitReset input {
+  border-radius: 10px;
+  border: none;
+  padding: 10px !important;
+  background-color: #2a85e04b;
+  font-weight: bold;
+}
+
+#Page_container #RegistrationForm #form .Inputfield .inputs {
+  border: 2px solid yellow;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#Page_container #RegistrationForm #form .Inputfield .inputs div {
+  border: 2px solid orangered;
+}
+
+#Page_container #RegistrationForm #form .Inputfield .inputs div #GenderContainer {
+  padding: 12px 0px !important;
+}
+
+#Page_container #RegistrationForm #form .Inputfield .inputs div span {
+  margin: 20px 10px 20px 0px !important;
+}
+
+#Page_container #RegistrationForm #form .Inputfield .inputs .form-group {
+  margin: 10px 5px !important;
+}
+
+#Page_container #RegistrationForm #form .Inputfield .inputs .form-group input {
+  margin-bottom: 10px !important;
+  padding-left: 10px !important;
+  height: 40px;
 }
 /*# sourceMappingURL=style.css.map */

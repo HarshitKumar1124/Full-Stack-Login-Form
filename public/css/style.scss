@@ -7,12 +7,178 @@
 #Page_container{
     border:2px solid red;
     width:100%;
-    height:100vh;
 
 
-    #LandingPageUI{
+    #LandingUI{
         border:2px solid dodgerblue;
-        
+        width:100%;
+        height: 60vh;
+        background: transparent linear-gradient(180deg, #184261 0%, #029FA4 100%) 0% 0% no-repeat padding-box;
+        color:white;
+
+
+       #Navbar{
+        border:2px solid red;
+        align-self: flex-start;
+
+        .Heading{
+              border:2px solid orangered;
+
+              h3{
+                  border:2px solid greenyellow;
+                  padding:20px 100px !important;
+              }
+        }
+
+        .OptionsList ul{
+            list-style-type: none;
+            border:2px solid magenta;
+            display: flex;
+            justify-content: right;
+            
+            li a{
+                display: inline-block;
+                border: 2px solid yellow;
+                padding:23px 40px !important;
+                margin:0px 10px !important;
+                font-size: 17.5px;
+                text-decoration: none;
+                color:white;
+         
+            }
+            
+        }
+       }
+
+
+
+       #Title{
+           letter-spacing: 10px;
+           font-size: 30px;
+           align-self: flex-start;
+           h1{
+               border: 2px solid red;
+               
+           }
+
+           p{
+               border: 2px solid saddlebrown;
+               font-size: 18px;
+               padding-top: 10px !important;
+           }
+       }
+
+
+       
+    }
+    #RegistrationForm{
+        border:2px solid greenyellow;
+        height: 700px;
+       display: flex;
+       justify-content: center;
+
+        #form{
+            border:2px solid blue;
+            margin:50px 0px !important;
+            background: transparent linear-gradient(90deg, #1169a8 0%, #029FA4 100%) 0% 0% no-repeat padding-box;
+            color:white;
+
+            .logo{
+                border:2px solid blueviolet;
+                margin-top: 30px !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img{
+                    width:40%;
+                    height: 40%;
+                    margin:30px 0px !important ;
+                    mix-blend-mode: multiply;
+                    border:2px solid forestgreen;
+                    
+                   
+                }
+                
+
+                h3{
+                    border:2px solid green;
+                    line-height: 40px;
+                    
+                }
+              
+            }
+            .Inputfield{
+                background-color: rgb(243, 236, 236);
+                margin-top: 30px !important;
+                height:500px;
+                border-radius: 15% 0% 0% 15%;
+                
+                #toggleButton{
+                    border:2px solid orange;
+                    height:60px;
+                }
+
+                h3{
+                    color:rgb(161, 148, 148);
+                    font-style: italic;
+                    border: 2px solid orangered;
+                    text-align: center;
+                    padding: 10px 0px !important;
+                }
+
+
+                .submitReset{
+                    border:2px solid pink;
+                    display: flex;
+                    justify-content: space-between;
+                    padding:30px !important;
+
+                    input{
+                        border-radius: 10px;
+                        border:none;
+                        padding:10px !important;
+                        background-color: #2a85e04b;
+                        font-weight: bold;
+                    }
+                }
+
+                .inputs{
+                    border:2px solid yellow;
+                    color:black;
+                    display: flex;
+                    justify-content: space-around;
+
+                    div{
+                        border:2px solid orangered;
+                        
+                        #GenderContainer{
+                            padding:12px 0px !important;;
+                        }
+                        span{
+                            margin:20px 10px 20px 0px !important;
+                        }
+                    }
+                    
+
+                    .form-group{
+                        margin:10px 5px !important;
+                        
+                    
+                        input{
+                            margin-bottom: 10px !important;
+                            padding-left: 10px !important;
+                            height:40px;
+                        
+
+                           
+                        }
+                    }
+                }
+
+          }
+
+        }
     }
 
 }
