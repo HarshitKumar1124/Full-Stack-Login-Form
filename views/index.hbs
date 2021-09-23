@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>MetaData}}
+  
+  
+</head>
+
+<body>
+
+
+  <div class="row" id="Page_container">
+
+    <div class="row col-12 " id="LandingUI">
+      <div class="row" id="Navbar">
+        <div class="col-6 Heading ">
+          <h3 title="HomePage">Harshit Kumar</h3>
+        </div>
+        <div class="col-6 OptionsList">
+          <ul>
+            <li><a class="nav-link" href="/" title="Home" target="_self">Home</a></li>
+            <li><a class="nav-link" href="/login" title="Go To Login Page" target="_self">LOG-IN</a></li>
+            <li><a class="nav-link"href="/Registrants" title="See All Registrants" target="_self">Registrations</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row text-center" id="Title">
+        <h1>First Full-Stack Login-Form</h1>
+        <p>Includes Responsive Features</p>
+      </div>
+    </div>
+    <div class="row col-12 " id="RegistrationForm">
+
+      <div class="col-9" id="form">
+        <div class="row " style="display: flex;justify-content: center;">
+          <div class="col-4 logo text-center">
+            <div class="row " style="border:2px solid purple;display: flex;justify-content: center;">
+              <img src="./StockImages/spacecradt.jpg" alt="" srcset="">
+              <h3>Welcome to the <br>Registration Portal</h3>
+            </div>
+          </div>
+          <div class="col-7 Inputfield">
+              
+            <form action="/registrants" method="post" class="row" id="toggleButton">
+              <h3>Registration Form</h3>
+              <div class="row inputs ">
+                <div class="col-5">
+
+                  <div class="form-group" style="border:2px solid dodgerblue;">
+                    <input type="text" name="FirstName"value="" class="form-control" placeholder="First Name*" id="firstName">
+                  </div>
+
+                  <div class="form-group" style="border:2px solid dodgerblue;">
+                    <input type="text" name="EmailID"value="" class="form-control" placeholder="EmailID*" id="Email ID">
+                  </div>
+
+                  <div class="form-group" style="border:2px solid dodgerblue;">
+                    <input type="number" name="MobileNo"value="" class="form-control" placeholder="Mobile No*" id="MobileNo">
+                  </div>
+
+                  <div class="form-group" style="border:2px solid dodgerblue;">
+                    <input type="password" name="Password"value="" class="form-control" placeholder="Password*" id="Password">
+                  </div>
+
+                </div>
+                <div class="col-5">
+
+                  <div class="form-group" style="border:2px solid dodgerblue;">
+                    <input type="text" name="LastName"value="" class="form-control" placeholder="Last Name*" id="LastName">
+                  </div>
+
+                  <div style="border:2px solid dodgerblue;" id="GenderContainer">
+
+                    <span style="border: 2px solid green;">
+                      <input type="radio" name="Gender" id="Male" style="border:2px solid red">
+                      <label for="Male">Male</label>
+                    </span>
+                    <span>
+                      <input type="radio" name="Gender" id="Female" style="border:2px solid red">
+                      <label for="Female">Female</label>
+                    </span>
+                  </div>
+
+                  <div class="form-group" style="border:2px solid dodgerblue;">
+                    <input type="number" name="Age"min="0" value="" class="form-control" placeholder="Age*" id="Age">
+                  </div>
+
+                  <div class="form-group" style="border:2px solid dodgerblue;">
+                    <input type="password" name="ConfirmPassword"value="" class="form-control" placeholder="Confirm Password*" id="ConfirmPassword">
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="row submitReset">
+                <input class="col-3" type="submit" value="Submit">
+                <input class="col-3" type="reset" value="Reset">
+              </div>
+            </form>
+         
+        </div>
+          
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>

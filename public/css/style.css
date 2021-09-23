@@ -111,6 +111,26 @@
   margin: 30px 0px !important;
   mix-blend-mode: multiply;
   border: 2px solid forestgreen;
+  position: relative;
+  animation: to-and-fro 1s ease-in-out 0.25s infinite alternate-reverse;
+}
+
+@-webkit-keyframes to-and-fro {
+  from {
+    top: 10px;
+  }
+  to {
+    top: -10px;
+  }
+}
+
+@keyframes to-and-fro {
+  from {
+    top: 10px;
+  }
+  to {
+    top: -10px;
+  }
 }
 
 #Page_container #RegistrationForm #form .logo h3 {
@@ -139,7 +159,7 @@
 }
 
 #Page_container #RegistrationForm #form .Inputfield .submitReset {
-  border: 2px solid pink;
+  border: 2px solid #ff002b;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
