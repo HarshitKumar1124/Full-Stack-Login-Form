@@ -6,6 +6,11 @@ const path= require('path');
 
 const hbs = require('hbs');
 
+
+//Data Hashing for securing passwords in DataBase we use Bcrypt.js
+const Bcrypt = require('bcryptjs');
+
+
 //***********Importing Database File */
 
 require('./Database/Connection.js');
@@ -22,6 +27,7 @@ app.use(express.static(staticPath));  //bydeafult take index.html in public
 const hbs_partials=path.join(__dirname,"../views/partials");
 
 //To get input values from url
+
 app.use(express.urlencoded({extended:false}))
 
 
@@ -46,6 +52,7 @@ app.post('/registrants',async (req,res)=>{
 
         if(password===confirmPassword)
         {
+            
              const UserInstance = new CollectionUser({
                 Name:req.body.FirstName + req.body.LastName,
                 EmailID:req.body.EmailID,
@@ -56,6 +63,14 @@ app.post('/registrants',async (req,res)=>{
                 Age:req.body.Age,
                 ConfirmPassword:confirmPassword
              })
+
+              //Database Password Hashing using Bcrypt
+              //whose function is defined in Schema Model
+              //Defination File. This function is example of 
+              //middleware. This is automatically call before specified event
+
+
+
 
              //inserting In Database
 

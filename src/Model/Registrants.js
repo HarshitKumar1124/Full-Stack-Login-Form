@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const bcrypt = require('bcryptjs')
 
 const UserSchema= new mongoose.Schema({
     Name:{
@@ -30,6 +31,18 @@ const UserSchema= new mongoose.Schema({
     ConfirmPassword:{
         type:String,
         required:true
+    }
+})
+
+
+//DataHashing for password field using Bcryptjs module
+UserSchema.pre('save',async function(next){
+
+    if(this.isModified('Password'))
+    {
+        this.Password= await bcrypt.hash(this.Password,10);
+        this.ConfirmPassword=undefined;
+        next();
     }
 })
 
