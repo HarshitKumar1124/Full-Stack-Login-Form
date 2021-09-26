@@ -5,6 +5,11 @@
           box-sizing: border-box;
 }
 
+@font-face {
+  font-family: UbantuM;
+  src: url(./Ubuntu-Medium.ttf);
+}
+
 #Page_container {
   border: 2px solid red;
   width: 100%;
@@ -207,5 +212,52 @@
   margin-bottom: 10px !important;
   padding-left: 10px !important;
   height: 40px;
+}
+
+#LoginPage {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #3DB2FF;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 60% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 60% 100%, 0% 100%);
+}
+
+#LoginPage #LoginArea {
+  width: 25%;
+  height: 500px;
+  -webkit-box-shadow: 0px 0px 30px #0000002b;
+          box-shadow: 0px 0px 30px #0000002b;
+  border: 2px solid black;
+  border-radius: 5%;
+  background-color: white;
+}
+
+#LoginPage #LoginArea h1 {
+  text-align: center;
+  border-radius: 5%;
+  border: 2px solid red;
+  width: 100%;
+  font-family: UbantuM;
+  color: #72c0f5;
+  padding: 20px 0px !important;
+  margin-top: 20px !important;
+}
+
+#LoginPage #LoginArea div input:focus {
+  border: none;
+  outline: none !important;
+}
+
+#LoginPage #LoginArea div input:hover {
+  -webkit-box-shadow: 0px 0px 10px #BCE954;
+          box-shadow: 0px 0px 10px #BCE954;
 }
 /*# sourceMappingURL=style.css.map */

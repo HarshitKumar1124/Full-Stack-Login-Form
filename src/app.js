@@ -40,7 +40,32 @@ app.get('/',(req,res)=>{
 })
 
 app.get('/login',(req,res)=>{
-    res.send('login Portal')
+    res.render('Login')
+})
+
+app.post('/login',async (req,res)=>{
+    try{
+        
+        const E_mail = req.body.Email;
+        const pass_word = req.body.password;
+
+        const UserCheck = await CollectionUser.findOne({EmailID : E_mail });
+
+        // console.log(`${E_mail} and ${pass_word}`)
+
+        const isMatch = await Bcrypt.compare(pass_word,UserCheck.Password);
+
+        if(isMatch)
+        {res.status(201).send(`Welcome ${UserCheck.Name} `)}
+        else
+        {res.status(201).send('Invalid Credential')}
+
+
+    }
+    catch(err)
+    {
+        res.status(400).send(`Error Match due to ${err}`);
+    }
 })
 
 app.post('/registrants',async (req,res)=>{
